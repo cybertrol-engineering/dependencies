@@ -2,6 +2,48 @@ apiVersion: v1
 entries:
   dependencies:
   - apiVersion: v2
+    created: "2022-09-02T20:34:33.731807329Z"
+    dependencies:
+    - condition: cert-manager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: ~1.9.1
+    - condition: cilium.enabled
+      name: cilium
+      repository: https://helm.cilium.io
+      version: ~1.12.0
+    - condition: coredns.enabled
+      name: coredns
+      repository: https://coredns.github.io/helm
+      version: ~1.19.4
+    - condition: ingress-nginx.enabled
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: ~4.2.1
+    - condition: longhorn.enabled
+      name: longhorn
+      repository: https://charts.longhorn.io
+      version: ~1.3.0
+    - condition: sealed-secrets.enabled
+      name: sealed-secrets
+      repository: https://bitnami-labs.github.io/sealed-secrets
+      version: ~2.6.0
+    description: Helm chart for common k8s dependencies.
+    digest: 08aafe77264fb1ee556b3487d784b3fbdf28cb0eecae12d0bcb7cc8ed7b12f28
+    home: https://github.com/cybertrol-engineering/dependencies
+    maintainers:
+    - name: alphabet5
+      url: https://github.com/alphabet5
+    - name: cybertrol-engineering
+      url: https://github.com/cybertrol-engineering
+    name: dependencies
+    sources:
+    - https://github.com/cybertrol-engineering/dependencies
+    type: application
+    urls:
+    - https://github.com/cybertrol-engineering/dependencies/releases/download/dependencies-0.0.12/dependencies-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
     created: "2022-08-25T17:06:18.911805732Z"
     dependencies:
     - condition: cert-manager.enabled
@@ -1457,4 +1499,4 @@ entries:
     urls:
     - https://github.com/cybertrol-engineering/dependencies/releases/download/k8s-dependencies-0.0.1-alpha.1/k8s-dependencies-0.0.1-alpha.1.tgz
     version: 0.0.1-alpha.1
-generated: "2022-08-25T17:06:18.912341638Z"
+generated: "2022-09-02T20:34:33.732531132Z"
